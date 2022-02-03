@@ -54,6 +54,14 @@ public class CuentaCorriente {
                 "\nnumeroCuentaCorriente= " + numeroCuentaCorriente;
     }
 
+    public String toString() {
+        return "CuentaCorriente{" +
+                "nombreUsuario='" + nombreUsuario + '\'' +
+                ", saldoInicial=" + saldoInicial +
+                ", numeroCuentaCorriente=" + numeroCuentaCorriente +
+                '}';
+    }
+
     public void tranferencia(double dineroTransferencia, CuentaCorriente c1, CuentaCorriente c2) {
         c1.saldoInicial = c1.saldoInicial - dineroTransferencia;
         c2.saldoInicial = c2.saldoInicial + dineroTransferencia;
